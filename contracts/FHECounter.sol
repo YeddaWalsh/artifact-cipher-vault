@@ -5,6 +5,8 @@ import {FHE, euint32, externalEuint32} from "@fhevm/solidity/lib/FHE.sol";
 import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
 /// @title A simple FHE counter contract
+/// @notice Demonstrates fully homomorphic encryption operations on Ethereum
+/// @dev Uses FHEVM protocol for privacy-preserving arithmetic operations
 contract FHECounter is SepoliaConfig {
     euint32 private _count;
 
