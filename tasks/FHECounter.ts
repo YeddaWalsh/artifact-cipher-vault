@@ -182,3 +182,33 @@ task("task:decrement", "Calls the decrement() function of FHECounter Contract")
 
     console.log(`FHECounter decrement(${value}) succeeded!`);
   });
+
+/**
+ * Example:
+ *   - npx hardhat --network localhost task:reset
+ *   - npx hardhat --network sepolia task:reset
+ */
+task("task:reset", "Calls the reset() function of FHECounter Contract")
+  .addOptionalParam("address", "Optionally specify the FHECounter contract address")
+  .setAction(async function (taskArguments: TaskArguments, hre) {
+    const { ethers, deployments } = hre;
+
+    const FHECounterDeployement = taskArguments.address
+      ? { address: taskArguments.address }
+      : await deployments.get("FHECounter");
+    console.log(`FHECounter: ${FHECounterDeployement.address}`);
+
+    const signers = await ethers.getSigners();
+
+    const fheCounterContract = await ethers.getContractAt("FHECounter", FHECounterDeployement.address);
+
+    const tx = await fheCounterContract
+      .connect(signers[0])
+      .reset();
+    console.log(`Wait for tx:${tx.hash}...`);
+
+    const receipt = await tx.wait();
+    console.log(`tx:${tx.hash} status=${receipt?.status}`);
+
+    console.log(`FHECounter reset() succeeded!`);
+  });
