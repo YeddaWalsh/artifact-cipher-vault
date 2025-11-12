@@ -31,6 +31,7 @@ const config: HardhatUserConfig = {
     currency: "USD",
     enabled: process.env.REPORT_GAS ? true : false,
     excludeContracts: [],
+    gasPrice: 20,
   },
   networks: {
     hardhat: {
