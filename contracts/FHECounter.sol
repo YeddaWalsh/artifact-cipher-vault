@@ -46,4 +46,12 @@ contract FHECounter is SepoliaConfig {
         FHE.allowThis(_count);
         FHE.allow(_count, msg.sender);
     }
+
+    /// @notice Resets the counter to zero
+    /// @dev Only allows the contract deployer to reset (for testing purposes)
+    function reset() external {
+        require(msg.sender == address(this), "Only contract can reset");
+        _count = FHE.asEuint32(0);
+        FHE.allowThis(_count);
+    }
 }
