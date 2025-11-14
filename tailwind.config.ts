@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        museum: {
+          terracotta: "hsl(var(--museum-terracotta))",
+          teal: "hsl(var(--museum-teal))",
+          amber: "hsl(var(--museum-amber))",
+          stone: "hsl(var(--museum-stone))",
+        },
+        encrypted: "hsl(var(--encrypted))",
+        decrypted: "hsl(var(--decrypted))",
       },
       borderRadius: {
         lg: "var(--radius)",
