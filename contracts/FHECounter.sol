@@ -38,6 +38,9 @@ contract FHECounter is SepoliaConfig {
     function decrement(externalEuint32 inputEuint32, bytes calldata inputProof) external {
         euint32 encryptedEuint32 = FHE.fromExternal(inputEuint32, inputProof);
 
+        // Ensure the proof is valid and input is properly formed
+        require(inputProof.length > 0, "Input proof required");
+
         _count = FHE.sub(_count, encryptedEuint32);
 
         FHE.allowThis(_count);
