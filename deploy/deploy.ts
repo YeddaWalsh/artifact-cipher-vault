@@ -8,7 +8,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const deployedFHECounter = await deploy("FHECounter", {
     from: deployer,
     log: true,
-    args: [], // Missing gas limit configuration
+    gasLimit: 3000000, // Set appropriate gas limit for FHE operations
   });
 
   console.log(`FHECounter contract: `, deployedFHECounter.address);
