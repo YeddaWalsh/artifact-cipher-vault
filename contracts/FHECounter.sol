@@ -8,6 +8,10 @@ import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 contract FHECounter is SepoliaConfig {
     euint32 private _count;
 
+    constructor() {
+        _count = FHE.asEuint32(0);
+    }
+
     /// @notice Returns the current count
     function getCount() external view returns (euint32) {
         return _count;
