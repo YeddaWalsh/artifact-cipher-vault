@@ -1,0 +1,22 @@
+# This file defines the code owners for this repository
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global owners - will be requested for review on all PRs
+* @YeddaWalsh @ClaraVeblen
+
+# Smart contracts
+contracts/ @ClaraVeblen
+
+# Frontend
+frontend/ @YeddaWalsh
+
+# Documentation
+*.md @YeddaWalsh
+docs/ @YeddaWalsh
+
+# CI/CD
+.github/ @YeddaWalsh
+
+# Dependencies
+package.json @YeddaWalsh
+package-lock.json @YeddaWalsh
