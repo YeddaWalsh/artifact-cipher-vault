@@ -55,7 +55,7 @@
     "mocha": "^11.5.0",
     "prettier": "^3.5.3",
     "prettier-plugin-solidity": "^1.2.0",
-    "rimraf": "^6.0.1",
+    "rimraf": "^6.1.2",
     "solhint": "^5.1.0",
     "solhint-plugin-prettier": "^0.1.0",
     "solidity-coverage": "^0.8.16",
