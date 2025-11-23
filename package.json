@@ -53,7 +53,7 @@
     "hardhat-deploy": "^1.0.3",
     "hardhat-gas-reporter": "^2.3.0",
     "mocha": "^11.5.0",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "prettier-plugin-solidity": "^1.2.0",
     "rimraf": "^6.0.1",
     "solhint": "^5.1.0",
