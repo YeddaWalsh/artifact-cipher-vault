@@ -47,7 +47,7 @@
     "chai-as-promised": "^8.0.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.14.3",
     "hardhat": "^2.24.3",
     "hardhat-deploy": "^1.0.3",
