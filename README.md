@@ -1,6 +1,6 @@
 # Artifact Cipher Vault
 
-**🚀 Live Demo**: [https://artifact-wine.vercel.app/](https://artifact-wine.vercel.app/)  
+**🚀 Live Demo**: [https://artifact-cipher-vault-xvfp.vercel.app/](https://artifact-cipher-vault-xvfp.vercel.app/)  
 **📹 Demo Video**: [https://github.com/YeddaWalsh/artifact-cipher-vault/blob/main/artifact.mp4](https://github.com/YeddaWalsh/artifact-cipher-vault/blob/main/artifact.mp4)
 
 A secure encrypted voting system for artifact transfer approvals using Fully Homomorphic Encryption (FHE) via the FHEVM protocol by Zama. This system enables confidential voting on artifact transfer requests while protecting voter privacy and preventing responsibility exposure during approval disputes.
